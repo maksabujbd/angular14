@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Angular14';
+  title = 'Switch Case';
+  // color='green';
+  color='abc';
 }
