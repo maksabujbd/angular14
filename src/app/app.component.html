@@ -13,10 +13,18 @@
   <input type="text"
          placeholder="Enter name"
          formControlName="name">
+  <br>
+  <span style="color: red;"
+        *ngIf="name && name.invalid && name.touched">
+    Name is required</span>
   <br><br>
   <input type="password"
          placeholder="Enter password"
          formControlName="password">
+  <br>
+  <span style="color: red;"
+        *ngIf="password && password.invalid && password.touched">
+    Password is required</span>
   <br><br>
-  <button>Login</button>
+  <button [disabled]="loginForm.invalid">Login</button>
 </form>
