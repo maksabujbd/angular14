@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Angular14';
+  title = 'Template Driven Form';
+
+  userLogin(item: any) {
+    console.warn(item);
+  }
 }
