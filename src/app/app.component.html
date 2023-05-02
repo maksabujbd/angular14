@@ -1,1 +1,22 @@
 <h1>{{title}}</h1>
+
+<!--<form #loginForm="ngForm" (ngSubmit)="userLogin(loginForm.value)">-->
+<!--  <input type="text" placeholder="Enter name" name="name" ngModel>-->
+<!--  <br><br>-->
+<!--  <input type="password" placeholder="Enter password" name="password" ngModel>-->
+<!--  <br><br>-->
+<!--  <button>Login</button>-->
+<!--</form>-->
+
+
+<form [formGroup]="loginForm" (ngSubmit)="loginUser()">
+  <input type="text"
+         placeholder="Enter name"
+         formControlName="name">
+  <br><br>
+  <input type="password"
+         placeholder="Enter password"
+         formControlName="password">
+  <br><br>
+  <button>Login</button>
+</form>
