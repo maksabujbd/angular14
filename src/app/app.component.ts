@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Angular14';
+  title = 'Nested For Loop';
+  users =[
+    {name: 'kader', phone:'111', socialAccounts: ['facebook', 'insta']},
+    {name: 'jannat', phone: '222', socialAccounts: ['youtube', 'yahoo']}
+  ]
 }
